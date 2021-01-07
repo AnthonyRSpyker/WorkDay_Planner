@@ -1,9 +1,7 @@
-var currentDay = $("#currentDay");
-
-var past= $("#past");
-var present = $("#present");
-
+var currentDay = $("#currentDay")
 //currentDay.text(moment().format('MMMM Do YYYY, h:mm:ss a'));
+
+
 // This way the time runs dynamically.
 var datetime = null,
         date = null;
@@ -14,14 +12,18 @@ var update = function () {
 };
 
 $(document).ready(function(){
-    datetime = $('#datetime')
+    datetime = $('#currentDay')
     update();
     setInterval(update, 1000);
 });
+
+
 //Setting the info to a local Storage.
 
 $(".btn").on("click",function(){
+
     var inputValue = $(this).siblings(".description").val();
+
     var id = $(this).parent().attr("id");
     
     localStorage.setItem(id, inputValue);
@@ -39,16 +41,31 @@ $("#17 .description").val(localStorage.getItem("17"));
 
 
 
-// function getLocal(){
-//     var number = $()
-// }
-//changing box color based on time.
+function colorChange(){
+    var currentHour = moment().hours();
 
-$(".row").addClass("future");
+    $(".time-block").each(function(){
 
+        var currentId = $(this).attr("id");
 
-function boxColor (){
+        if(currentId < currentHour){
+            $(this).addClass("past")
+        }
+
+        else if(currentId > currentHour){
+            $(this).addClass("future");
+        }
+
+        else{$(this).addClass("present")}
+
+    })
 
 }
 
-$
+colorChange();
+
+
+
+
+
+
