@@ -5,3 +5,13 @@
   
   
   
+  Content of Root Directory:
+  - Readme file,
+  - index.html
+  - style.css
+  - script.js
+  
+  Supporting API's used in this application:
+  - JQuerry
+  - FontAwsome
+  - Moment.js
