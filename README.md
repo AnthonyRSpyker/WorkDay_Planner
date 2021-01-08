@@ -15,3 +15,10 @@
   - JQuerry
   - FontAwsome
   - Moment.js
+  
+  Functions on This Site:
+  - Dynamic date and clock calander.
+  - Dynamically color coordinated time slots.
+  - Local browser storage capabilities.
+  
+
