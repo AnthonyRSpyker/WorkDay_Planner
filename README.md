@@ -4,8 +4,8 @@
   The planner is presented in the format of a normal 9AM-5PM work day.  As the hours of the work day pass, the color of the hour blocks change dynamically based on wether the blocks are in the future (green), present (tomoato) or past (gray).  There is a running clock on the site as well that changes dynamically as well as full date month and time.  When a user wants to note something in the planner, they can simply type in the space between the time and the button and then press the button on the right with the save card on it to save the info to the local browser storage.
   
   
-  ![this is an image of the web-site clock and title](![images/Dynamic1.png)
-  ![this is an image of the web-site clock and title](![images/Dynamic2.png)
+  ![this is an image of the web-site clock and title][images/Dynamic1.png)
+  ![this is an image of the web-site clock and title][images/Dynamic2.png)
   Link to site: https://anthonyrspyker.github.io/WorkDay_Planner/.
   
   Content of Root Directory:
